@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  apache-php:
+    image: apache-mysqli
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - C:/Users/Mykolas/Documents/ITProjektas/ITProjektasWebApp/WIP:/var/www/html
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql
+    volumes:
+      - C:/Users/Mykolas/Documents/ITProjektas/ITProjektasWebApp/DB:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    networks:
+      - app-network
+
+  phpmyadmin:
+    image: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
