@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .login-container {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .admin-container {
+    width: 75%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #5b4b8a;
+}
+
+    button:hover {
+        background-color: #4a3c6f;
+    }
+
+    .error-message {
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+    .button-container { 
+        display: 
+        inline-block; 
+        margin-right: 10px;
+    }
+
+    .logout-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #6c53a1;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .logout-button:hover {
+        background-color: #583f89;
+    }
+
+    .download-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: inline-block;
+        margin: 0 auto;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #28a745;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    a:hover {
+        background-color: #218838;
+    }
+
+    table {
+        width: 100%;
+        margin: center;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f4f4f4;
+    }
+    form {
+        display: inline;
+    }
+    input[type="number"] {
+        width: 80px;
+    }
+
+    .logout {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #5b4b8a;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 14px;
+    }

@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - C:/Users/Mykolas/Documents/ITProjektas/ITProjektasWebApp/WIP:/var/www/html
+      - C:/Users/Mykolas/Documents/ITProjektas/ITProjektasWebApp/src:/var/www/html
     ports:
       - "80:80"
     networks:
@@ -26,6 +26,7 @@ services:
     image: phpmyadmin
     environment:
       PMA_HOST: mysql
+      UPLOAD_LIMIT: 128M
     ports:
       - "8080:80"
     depends_on:
